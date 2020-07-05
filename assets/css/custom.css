@@ -8,7 +8,7 @@
 }
 
 .custom .flexbox > li {
-    flex-basis: 33.33%;
+    flex-basis: 50%;
 }
 
 .custom .main {
