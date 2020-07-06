@@ -17,12 +17,20 @@
 }
 
 .custom h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-transform: none;
+}
+
+.custom li li {
+    line-height: 2;
 }
 
 @media(max-width: 980px) {
     .custom .flexbox > li {
         flex-basis: 100%;
+    }
+
+    hr.custom {
+        display: none;
     }
 }
