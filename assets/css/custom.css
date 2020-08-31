@@ -2,13 +2,12 @@
     font-size: 2rem;
 }
 
-.custom .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.custom .flexbox > li {
-    flex-basis: 50%;
+.custom .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'domains tools'
+        'languages tools';
 }
 
 .custom .main {
@@ -18,6 +17,7 @@
 
 .custom h3 {
     font-size: 1.3rem;
+    margin-bottom: 0.4rem;
     text-transform: none;
 }
 
@@ -25,9 +25,21 @@
     line-height: 2;
 }
 
+.custom #domains {
+    grid-area: domains;
+
+}
+.custom #tools {
+    grid-area: tools;
+}
+
+.custom #languages {
+    grid-area: languages;
+}
+
 @media(max-width: 980px) {
-    .custom .flexbox > li {
-        flex-basis: 100%;
+    .custom .grid {
+        display: block;
     }
 
     hr.custom {
