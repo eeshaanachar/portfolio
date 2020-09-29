@@ -37,6 +37,10 @@
     grid-area: languages;
 }
 
+p.custom {
+    text-align: left;
+}
+
 @media(max-width: 980px) {
     .custom .grid {
         display: block;
